@@ -21,6 +21,7 @@ const authLogin = async (req, res) => {
             success: true,
             error: false
         })
+        res.cookie('token',token)
 
 
 
