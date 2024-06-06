@@ -21,7 +21,7 @@ const UserRegistration = async (req, res) => {
     } catch (error) {
         res.json({
             error: true,
-            message: "Error Occured" || error.message,
+            message: error.message,
             success: false,
         })
     }
